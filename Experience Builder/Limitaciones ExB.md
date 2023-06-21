@@ -1,0 +1,1 @@
+No puedes traspasar las apps de los usuarios ni dentro de la misma organización. 
