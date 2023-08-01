@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "format": "prettier --write \"*.{js, jsx, json, css}"
+  },
+  "prettier": {
+    "trailingComma": "all", 
+    "singleQuote": true
   },
   "repository": {
     "type": "git",
@@ -17,6 +22,7 @@
     "eslint-plugin-react": "^7.33.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
