@@ -18,7 +18,11 @@
     }
   }, 
   "lint-staged": {
-      "src/**/*.{js,jsx}": ["npm run lint"]
+      "src/**/*.{js,jsx}": ["npm run lint"], 
+      "src/**/*.{js, jsx, json, css, scss}": [
+        "prettier -write", 
+        "git add"
+      ]
   },
   "repository": {
     "type": "git",
