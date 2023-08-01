@@ -16,5 +16,13 @@
     ],
     "rules": {
         "linebreak-style": "off"
+    }, 
+    "husky": {
+        "hooks":{
+            "pre-commit": "lint-staged"
+        }
+    }, 
+    "lint-staged": {
+        "src/**/*.{js,jsx}": ["npm run lint"]
     }
 }
