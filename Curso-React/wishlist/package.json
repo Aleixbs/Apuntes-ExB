@@ -12,6 +12,14 @@
     "trailingComma": "all", 
     "singleQuote": true
   },
+  "husky": {
+    "hooks":{
+        "pre-commit": "lint-staged"
+    }
+  }, 
+  "lint-staged": {
+      "src/**/*.{js,jsx}": ["npm run lint"]
+  },
   "repository": {
     "type": "git",
     "url": "(https://github.com/Aleixbs/Apuntes_ExB/Curso-React/wishlist)"
